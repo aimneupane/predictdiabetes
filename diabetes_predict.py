@@ -28,7 +28,7 @@ def app():
 
     print(prediction)
 
-    if (prediction[0]==1):
+    if (prediction==1):
         st.warning("You are a diabetic patient")
     else:
         st.success("You are in good shape donot worry no diabetes in your body")
