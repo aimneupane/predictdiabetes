@@ -28,10 +28,10 @@ def app():
 
     print(prediction)
 
-    if (prediction==1):
-        st.warning("You are a diabetic patient")
+    if prediction==1:
+        st.write("You are a diabetic patient")
     else:
-        st.success("You are in good shape donot worry no diabetes in your body")
+        st.write("You are in good shape donot worry no diabetes in your body")
 
 
 
