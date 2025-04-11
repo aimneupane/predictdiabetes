@@ -5,7 +5,7 @@ import numpy as np
 import sklearn
 
 
-load_pk=pickle.load(open("modelpickle.pkl","rb"))
+load_pk=pickle.load(open("mod_pkles","rb"))
 
 def app():
     st.title("Diabetes prediction")
