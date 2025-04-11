@@ -5,7 +5,7 @@ import numpy as np
 import sklearn
 
 
-load_pk=pickle.load(open("mod_pkles","rb"))
+load_pk=pickle.load(open("modelpickle.pkl","rb"))
 
 def app():
     st.title("Diabetes prediction")
@@ -29,7 +29,7 @@ def app():
     if prediction==0:
         st.warning("You are not a diabetic patient")
     else:
-        st.sucess("You are suffering from diabetes")
+        st.success("You are suffering from diabetes")
 
 
 
