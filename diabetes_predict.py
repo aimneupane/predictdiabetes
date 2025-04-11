@@ -26,12 +26,10 @@ def app():
     reshape_data=input_data_np_array.reshape(1,-1)
     prediction=load_pk.predict(reshape_data)
 
-    print(prediction)
-
-    if prediction==1:
-        st.write("You are a diabetic patient")
+    if prediction==0:
+        st.warning("You are not a diabetic patient")
     else:
-        st.write("You are in good shape donot worry no diabetes in your body")
+        st.sucess("You are suffering from diabetes")
 
 
 
